@@ -35,7 +35,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #3e3f3a;
   --bs-gray-900: #212529;
-  --bs-primary: ##FF033E;
+  --bs-primary: #FF033E;
   --bs-secondary: #8e8c84;
   --bs-success: #93c54b;
   --bs-info: #29abe0;
@@ -81,9 +81,9 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #93c54b;
+  --bs-link-color: #e83e8c;
   --bs-link-hover-color: #769e3c;
-  --bs-code-color: #e83e8c;
+  --bs-code-color: #93c54b;
   --bs-highlight-bg: #fff3cd;
 }
 *,
