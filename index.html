@@ -2,147 +2,205 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <script src="/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" href="./src/css/style.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
-        <!--<script src="public/js/main.js"></script>-->
-        <link href="src/CSS/bootstrap.min.css" rel="stylesheet">
-        <title>PDF Sanitizer 0.1</title>
+        <!-- <link href="src/CSS/bootstrap.min.css" rel="stylesheet"> -->
+        <title>PDF Sanitizer Front Facing Website</title>
         <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-      <div class="container-fluid" style="background-color: #BF2029; color: #fff; border-style: solid; border-color: #BF2029;">
-        <h1 style="text-align: center; ">Team 05 PDF Sanitizer</h1>
-      </div> 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-              <div class="collapse navbar-collapse" id="navbarColor01" style="text-align: center;">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home
-                      <span class="visually-hidden">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://trello.com/b/P034xfrZ/riverside-research-pdf-sanitizer">Trello</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/js4nt0s/pdf-sanitizer">Private Repository</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+
+      <header>
+        <img class="logo" src="public/img/pc-sweeping.gif" alt="logo">
+        <h1 class="nav__title">PDF Sanitizer</h1>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="#meet-the-team">Team</a></li>
+            <li><a href="#sponsor">Sponsor</a></li>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#how-to">How-To</a></li>
+            <li><a href="#tech">Technology</a></li>
+            <li><a href="#demo-video">Demo</a></li>
+            <li><a href="#ack">Acknowledgments</a></li>
+          </ul>
         </nav>
-        <div class="container-fluid" style="background-color: #BF2029; color: #fff;">
-          <div class="container" >
-          <table cellpadding="10px">
-            <tbody>
-              <tr>
-                <td style="vertical-align: top; ">
-                  <p>Sponser</p>
-                  <h4>Riverside Research</h4>
-                  Riverside Research is an independent nonprofit focused on our <br>
-                  nations security with focuses on AI, secure and resilient systems, <br>
-                  THz Imaging, radar systems, intelligence, surveillance, reconnaissance,  <br>
-                  system engineering and integration, and more.
-                </td>
-                <td><img src="src/img/RiversideResearch.png" style="object-fit: cover; border-radius: 50%;"></td>
-                <td style="padding-left: 0.5cm; vertical-align: top;">
-                  <p>Project</p>
-                  <h4>PDF Sanitizer</h4>
-                  Allow users to modify a PDF by removing hyperlinks and metadata
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      </header>
+
+      <section class="main">
+        <div class="wrapper">
+
+          <div style="width: 65%; float:left">
+            <h2 class = section-title>PDF Sanitizer</h2>
+            <p>Upload, remove hyperlinks, and download sanitized PDF files with Team 5's free PDF Sanitizer.</p>
+            <button>Try Application</button>
+            <button>Visit Repository</button>
+          </div>
+          <div style="width: 35%; float:right;""></div>
+            <!-- <img src="https://www.adobe.com/content/dam/dx-dc/images/acrobat/pdf-reader/new-images/PDF_Reader_Marquee_Device_desktop.png.img.png" alt=""> -->
+            <img src="public/img/pc-sanitize.gif" alt="">
+          </div>
+        
+        </div>
+      </section>
+
+      <section id="meet-the-team">
+        <div class="wrapper">
+          <h2 class = section-title>Meet the Team</h2>
+          <div class="profiles">
+
+            <div class="profile">
+              <div class="image-wrapper" style="background-image: url(./src/img/jorge.jpg); background-size: cover;;"></div>
+              <h1>Jorge L. Santos</h1>
+              <p>Computer Information Systems Major</p>
+              <p>PDF Sanitization</p>
+              <p>santosmendezj1@udayton.edu</p>
+              <button>LinkedIn</button>
+            </div>
+  
+            <div class="profile">
+              <div class="image-wrapper"style="background-image: url(./src/img/jacob.jpg); background-size: cover;" ></div>
+              <h1>Jacob Babal</h1>
+              <p>Computer Information Systems Major</p>
+              <p>Backend & Frontend</p>
+              <p>babalj1@udayton.edu</p>
+              <button>LinkedIn</button>
+            </div>
+
+            <div class="profile">
+              <div class="image-wrapper" style="background-image: url(./src/img/keivan.jpg); background-size: cover;""></div>
+              <h1>Keivan Jiang</h1>
+              <p>Computer Information Systems Major</p>
+              <p>Frontend</p>
+              <p>jiangk3@udayton.edu</p>
+              <button>LinkedIn</button>
+            </div>
+
+            <div class="profile">
+              <div class="image-wrapper" style="background-image: url(./src/img/andrew.jpg); background-size: cover;""></div>
+              <h1>Jessica Rees</h1>
+              <p>Computer Information Systems Major</p>
+              <p>Frontend</p>
+              <p>reesj3@udayton.edu</p>
+              <button>LinkedIn</button>
+            </div>
+
+
+            <div class="profile">
+              <div class="image-wrapper" style="background-image: url(./src/img/jessica.jpg); background-size: cover;""></div>
+              <h1>Andrew Manory</h1>
+              <p>Computer Information Systems Major</p>
+              <p>Contanerization</p>
+              <p>manorya1@udayton.edu</p>
+              <button>LinkedIn</button>
+            </div>
+
+          </div>
+
+      </section>
+      <div class="section-divider"></div>
+      <section id="sponsor">
+        <div class="wrapper sponsor"style="display:flex">
+          
+          <div style="width:50%;">
+            <img src="./src/img/RiversideResearch.png" alt="RiversideResearch">
+          </div>
+
+          <div style="width:50%;">
+            <h2 class = section-title>Meet Our Sponsor</h2>
+            <p>Riverside Research is an independent nonprofit 
+              focused on our nation’s security. Our nonprofit structure allows us to 
+              design solutions that follow where the science leads, and our 
+              collaborative innovation model produces accelerated results.
+               Our independent research and development is in the public 
+               interest and for the benefit and furtherance of the 
+               U.S. government's mission-related work.</p>
+            <p style="font-weight: bold;"> - Riverside Reseach</p>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- <div class="section-divider"></div> -->
+
+      <section class="purpose" id="purpose">
+        <div class="wrapper">
+          <h2 class = section-title>Why a PDF Sanitizer?</h2>
+          <p style="line-height: 2; text-indent: 50px;">    On today's environment we often interact a lot with PDF documents. Maybe it's homework a professor gave you, or it's a cool pamphlet for a concert,
+            or you be doing graduate research and need to read up a study! Whatever the reason is, most likely the PDF document contains hyperlinks. Now if you downloaded
+            the document from untrusted source, one of the hyperlinks inside the PDF file might be malicious! Accidentally clicking on it may take you to downloading a malware, getting phished or 
+            a even a CSRF attack! Our solution is to remove hyperlink elements from PDFs in order to make them unlickable while still remaining on the PDF file. 
+          </p>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+      
+      <section class="how-to" id="how-to">
+        <div class="wrapper">
+          <h2 class = section-title>How To Use</h2>
+          <p> To be done...</p>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="technology" id="tech">
+        <div class="wrapper info">
+          <h2 class = section-title>Technology</h2>
+          <a href="https://react.dev/">React TS</a> </br>
+          <a href="https://axios-http.com/docs/intro">Axios</a> </br>
+          <a href="https://www.python.org/">Python</a>
+          <ul> 
+            <li><a href="https://fastapi.tiangolo.com/">FastAPI</a></li>
+            <li><a href="https://www.uvicorn.org/">Uvicorn</a></li>
+            <li><a href="https://pypi.org/project/pypdftk/">PyPDF ToolKit</a></li>
+          </ul>
+          <a href="https://manpages.ubuntu.com/manpages/bionic/en/man1/pdftk.1.html">PDF ToolKit</a> </br>
+          <a href="https://www.docker.com/">Docker</a> </br>
+        </div>
+      </section>
+
+      <section class="Demo">
+        <div class="wrapper">
+          <h2 class = section-title>Demo Video</h2>
+          <iframe src="https://drive.google.com/file/d/1NjCOLQKZ-l-XontRZ8p-K4WceHFw4_Sv/preview" width="1280" height="720" allow="autoplay" style="display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border-color: black;
+          border: none;" id="demo-video"></iframe>
+        </div>
+      </section>
+
+      <section class="acknowledgments" id="ack">
+        <div class="wrapper ack-ack">
+          <h2 class = section-title>The team would like to thank the following people for their contributions to the project</h2>
+
+          <div class="ack">
+
+            <div class="ack-cards">
+              <h2> Todd Irlbeck </h2>
+              <img src="https://udayton.edu/artssciences/academics/computerscience/_resources/2019-2020-img-files/irlbeck-todd-2021.jpeg">
+            </div>
+
+            <div class="ack-cards">
+              <h2> Concepcion Garcia Jr</h2>
+              <img src="https://media.licdn.com/dms/image/C4D03AQGprlLl8JRBLw/profile-displayphoto-shrink_400_400/0/1629421723697?e=1687392000&v=beta&t=uw_aUsOiGH2QvJ0IogVEUB2rE4_1nSqSYcuScr4yszQ">
+            </div>
+
+            <div class="ack-cards">
+              <h2> Nicholas Stiffler </h2>
+              <img src="https://udayton.edu/directory/artssciences/computerscience/images/stiffler-nick-09-0721.jpg">
+            </div>
+
+            <!-- <div class="ack-cards">
+              <h2> Erika Terrado </h2>
+              <img src="./src/img/choose_a_filestep_2.png">
+            </div> -->
+
           </div>
         </div>
-      <div class="container">
-       <h2 style="text-align: center;">Team 05 Members </h3>
-        <table class="table">
-          <tbody>
-            <tr>
-              <td><img src="src/img/jorge.jpg" style="height: 250px; width: 175px; object-fit: cover;"></td>
-              <td><h3>Jorge L. Santos</h3> 
-                <a href="mailto:santosmendezj1@udayton.edu">santosmendezj1@udayton.edu </a> <br>
-                Major in Computer Information Systems <br> 
-                <a href="https://www.linkedin.com/in/jorge-santos-aaa466249/">Linkedin</a>
-              </td>
-              <td><img src="src/img/keivan.jpg" style="height: 250px; width: 175px; object-fit: cover;"></td>
-              <td>
-                <h3>Keivan Jiang</h3>
-                <a href="mailto:jiangk3@udayton.edu">jiangk3@udayton.edu</a> <br>
-                Major in Computer Information Systems <br> 
-                <a href="https://www.linkedin.com/in/keivan-jiang/">Linkedin</a>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="src/img/jacob.jpg" style="height: 250px; width: 175px; object-fit: cover;"></td>
-              <td>
-                <h3>Jacob Babal</h3>
-                <a href="mailto:babalj1@udayton.edu">babalj1@udayton.edu </a><br>
-                Major in Computer Information Systems <br> 
-                <a href="">Linkedin</a>
-              </td>
-              <td><img src="src/img/andrew.jpg" style="height: 250px; width: 175px; object-fit: cover;"></td>
-              <td>
-                <h3>Andrew Manory </h3>
-                <a href="mailto:manorya1@udayton.edu">manorya1@udayton.edu </a><br>
-                Major in Computer Information Systems <br> 
-                <a href="https://www.linkedin.com/in/andrew-manory-62661123a/">Linkedin</a>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="src/img/jessica.jpg" style="height: 250px; width: 175px; object-fit: cover;"></td>
-              <td>
-                <h3>Jessica Rees</h3>
-                <a href="mailto:reesj3@udayton.edu">reesj3@udayton.edu </a> <br>
-                Major in Computer Information Systems <br> 
-                <a href="https://www.linkedin.com/in/jessica-e-rees/">Linkedin</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="container">
-        <h1> Developer Blog </h1>
-	    <h5> Mon 27 February </h5>
-	    <br> 
-	    We’re working on connecting our front and back end. This last week, we were 
-        finally able to parse a PDF and find all the data within. We are also able to manually remove a hyperlink element from text. 
-        Our next step would be to automate the process of searching for the hyperlink and removing it. 
-        We’re also working on uploading files from the front, which can be received from the back. We’ve stumbled a bit, 
-        struggling to find the best solution to this issue. With some more research and testing, we should get it working soon. 
-	    <br><br> 
-        - Team 05 Keivan Jiang 
-	    <br><br>
-	    <h5> Mon 6 March </h5>
-		<br>
-	This week, we have managed to finally get our frontend to communicate with the backend. We are able to successfully upload a PDF file through our web app, 
-	    and receive it on a local folder on our repository. It also limits uploads to .pdf types. We are working on developing a drag and drop for the 
-	    front end. For now, our backend just receives the file. Our next step would be to get our sanitizer functionality to do something with the files 
-	    received. 
-	    <br> <br>
+      </section>
 
-		- Team 05 Keivan Jiang
-	    <br><br>
-	    <h5> Mon 27 March </h5>
-		<br>
-	Over the past 3 weeks, we have had extreme amounts of success with the project. We've gone from a large amount of disconeccted parts and have moved into,
-        having one fully connected project. This means that you can go to the website, upload a pdf, which then all the hyperlinks within the PDF are detected.
-        We currently need to continue working on sending the output to the user, as currently a log file detailing all the detected hyperlinks is generated,
-        but not sent anywhere. Additionally, we need to find a way to remove the hyperlinks from the PDF file, without completely destroying the PDF's format.
-	    <br> <br>
-
-		- Team 05 Andrew Manroy & Jessica Rees
-	    <br><br>
-      <h5>Mon 17 April</h5>
-      <br>
-      Over the past few weeks, the final portion of the PDF Sanitizer has been finished. A user is able to upload a pdf, have the PDF sanitized, and download 
-      the sanitized version of the PDF. All that's left is figuring out the finishing touches.
-      <br><br>
-      - Team 05 Jessica Rees
-      <br><br>
-    </div>
     </body>
 </html>
