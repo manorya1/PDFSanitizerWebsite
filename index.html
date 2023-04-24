@@ -23,6 +23,7 @@
             <li><a href="#tech">Technology</a></li>
             <li><a href="#demo-video">Demo</a></li>
             <li><a href="#ack">Acknowledgments</a></li>
+            <li><a href="#blog">Blog</a></li>
           </ul>
         </nav>
       </header>
@@ -190,14 +191,118 @@
               <img src="https://udayton.edu/directory/artssciences/computerscience/images/stiffler-nick-09-0721.jpg">
             </div>
 
-            <!-- <div class="ack-cards">
+            <div class="ack-cards">
               <h2> Erika Terrado </h2>
               <img src="./src/img/choose_a_filestep_2.png">
-            </div> -->
+            </div>
 
           </div>
         </div>
       </section>
+
+      <div class="section-divider"></div>
+
+      <section class="blog" id="blog">
+        <div class="wrapper" >
+
+          <h2 class = section-title>Sprint Blog</h2>
+
+          <div class="slideshow-container">
+          
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="" style="width:100%; height: 350px; object-fit: cover; visibility: hidden;">
+              <div class="text-ontop">
+                Over the past few weeks, the final portion of the PDF Sanitizer has been finished. A user is able to upload a pdf, have the PDF sanitized, and download 
+                the sanitized version of the PDF. All that's left is figuring out the finishing touches.
+              </div>
+              <div class="text">April 17th | Jessica Rees</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="" style="width:100%; height: 350px; object-fit: cover; visibility: hidden;">
+              <div class="text-ontop">
+                Over the past 3 weeks, we have had extreme amounts of success with the project. We've gone from a large amount of disconeccted parts and have moved into,
+                having one fully connected project. This means that you can go to the website, upload a pdf, which then all the hyperlinks within the PDF are detected.
+                We currently need to continue working on sending the output to the user, as currently a log file detailing all the detected hyperlinks is generated,
+                but not sent anywhere. Additionally, we need to find a way to remove the hyperlinks from the PDF file, without completely destroying the PDF's format.
+              </div>
+              <div class="text">March 27th | Andrew Manroy & Jessica Rees </div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="" style="width:100%; height: 350px; object-fit: cover; visibility: hidden;">
+              <div class="text-ontop">
+                This week, we have managed to finally get our frontend to communicate with the backend. We are able to successfully upload a PDF file through our web app, 
+                and receive it on a local folder on our repository. It also limits uploads to .pdf types. We are working on developing a drag and drop for the 
+                front end. For now, our backend just receives the file. Our next step would be to get our sanitizer functionality to do something with the files 
+                received. 
+              </div>
+              <div class="text">March 6th | Keivan Jiang</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="" style="width:100%; height: 350px; object-fit: cover; visibility: hidden;">
+              <div class="text-ontop">
+                We’re working on connecting our front and back end. This last week, we were 
+                finally able to parse a PDF and find all the data within. We are also able to manually remove a hyperlink element from text. 
+                Our next step would be to automate the process of searching for the hyperlink and removing it. 
+                We’re also working on uploading files from the front, which can be received from the back. We’ve stumbled a bit, 
+                struggling to find the best solution to this issue. With some more research and testing, we should get it working soon.
+              </div>
+              <div class="text">February 27th | Keivan Jiang</div>
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+        
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+
+
+        </div>
+      </section>
+
+      <script>
+        let slideIndex = 1;
+          showSlides(slideIndex);
+
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+      </script>
 
     </body>
 </html>
